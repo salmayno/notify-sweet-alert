@@ -47,7 +47,7 @@ class SweetAlertRenderer implements RendererInterface, HasScriptsInterface, HasS
         $context = $envelope->getContext();
         $options = isset($context['options']) ? $context['options'] : array();
 
-        $options['title'] = $envelope->getTitle();
+        $options['title'] = " " . $envelope->getTitle();
         $options['text'] = $envelope->getMessage();
         $options['icon'] = $envelope->getType();
 
